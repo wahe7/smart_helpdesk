@@ -18,6 +18,9 @@ app.use((err, req, res, next) => {
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/kb', require('./routes/kb'));
+app.use('/api/tickets', require('./routes/tickets'));
+app.use('/api/agent-review', require('./routes/agentReview'));
+
 
 
 module.exports = app;
