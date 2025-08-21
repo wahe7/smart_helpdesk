@@ -17,5 +17,7 @@ app.use((err, req, res, next) => {
 });
 
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/kb', require('./routes/kb'));
+
 
 module.exports = app;
